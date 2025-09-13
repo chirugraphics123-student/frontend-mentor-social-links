@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social links</title>
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    *{
+        margin: 0;padding: 0;
+    }
+    body{
+        height:100vh;
+    }
+    .container{
+        height:100%;
+        background-color: black;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        font-family: "Inter", sans-serif;
+        padding:40px 0px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width:25%;
+        height:70%;
+        background-color: #1f1f1f;
+        color:white;
+        gap:20px;
+        border-radius: 10px;
+    }
+    .box img{
+        width:120px;
+        height:120px;
+        border-radius: 90px;
+    }
+    .box section{
+        text-align: center;
+    }
+    .box section p:nth-child(1){
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .box section .green{
+        font-size: 15px;
+        color:greenyellow
+    }
+    .box .description{
+        font-weight: 200;
+    }
+    .box .links{
+        width:85%;
+        display: grid;
+        text-align: center;
+        align-items: center;
+        grid-template-rows: repeat(5,40px);
+        gap:18px;
+    }
+    .links div{
+        padding:12px 0px;
+        width:100%;
+        background-color: #333333;
+        border-radius: 10px;
+        transition: all 0.15s ease-in;
+    }
+    .links div:hover{
+        cursor: pointer;
+        background-color: greenyellow;
+        color:black
+    }
+    @media (min-width:768px) and (max-width:1024px){
+        .container{
+            
+            justify-content:space-around;
+        }
+        .box{
+            width:70%;
+            height: 50%;
+        }
+    }
+    @media(max-width:767px){
+        .box{
+            width:90%;
+        }
+    }
+    
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="assets/images/avatar-jessica.jpeg" alt="Avatar">
+            <section>
+                <p>Jessica Randall</p>
+                <p class="green">London, United Kingdom</p>
+            </section>
+            <p class="description">"Front-end developer and avid reader"</p>
+            <div class="links">
+                <div class="github">Github</div>
+                <div class="frontend">Frontend Mentor</div>
+                <div class="linkedin">Linkedin</div>
+                <div>Twitter</div>
+                <div>Instagram</div>
+            </div>
+        </div>
+    </div>
+<script>
+    let button=document.querySelector(".github")
+    button.addEventListener("click",()=>{
+        location.href="https://github.com/chirugraphics123-student"
+    })
+    button=document.querySelector(".frontend")
+    button.addEventListener("click",()=>{
+        location.href="https://www.frontendmentor.io/profile/chirugraphics123-student"
+    })
+    button=document.querySelector(".linkedin")
+    button.addEventListener("click",()=>{
+        location.href="https://www.linkedin.com/in/chirag-chinnappa-8b3782381/"
+    })
+</script>
+</body>
+</html>
