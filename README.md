@@ -4,7 +4,8 @@ This is a solution to the **Social Links Profile Card** challenge from Frontend 
 The goal of this project is to build a responsive profile card that displays social links with a clean and modern design.
 
 ---
-
+Live site: https://chirugraphics123-student.github.io/frontend-mentor-social-links/
+---
 ## 🚀 Features
 
 - Responsive card layout centered on the screen  
